@@ -1,0 +1,1152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feven Portfolio</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="">
+        <span class="artistic-text">
+          <span class="first-letter">F</span>even 
+          <span class="first-letter">T</span>efera
+        </span>
+      
+        <style>
+   .artistic-text {
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #fff; /* White color */
+  letter-spacing: 1px; /* Add subtle spacing */
+}
+
+.artistic-text .first-letter {
+  font-size: 1.5rem; /* Larger size for the first letters */
+  font-weight: 1000px;
+  color: #ffffff; /* Light purple for the first letters */
+  text-transform: uppercase; /* Ensure first letters are capitalized */
+  margin-right: 2px; /* Slight spacing after the big letter */
+  font-family: 'Playfair Display', serif; /* Matches the rest for consistency */
+}
+.artistic-text:hover {
+  transform: scale(1.2); /* Enlarge the entire name on hover */
+  color: #ffffff; /* Optional: Change the text color slightly */
+  font-size: xx-large;
+}
+
+        </style>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link"  href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
+          </li>
+          <style>
+            .navbar-nav .nav-link {
+  color: #ffffff !important; /* White text */
+  font-weight: bold; /* Bold text */
+  text-transform: capitalize; /* Capitalize first letters */
+  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+  font-size: larger;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #090111 !important; /* Light purple hover effect */
+
+  
+}
+
+
+
+          </style>
+        </ul> 
+        <a href="#contact" style="text-decoration: none;">
+        <button type="button" class="rounded-pill btn-rounded">
+          Email Me
+          <span>
+            <i class="fas fa-envelope"></i>
+          </span>
+        </button></a>
+      </div>
+    </div>
+  </nav>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 - THE INTRO SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="home" class="intro-section">
+  <div class="container">
+    <div class="row align-items-center text-white">
+      <!-- START THE CONTENT FOR THE INTRO  -->
+      <div class="col-md-6 intros text-start">
+        <h1 class="display-2">
+          <span class="display-2--intro">Hey!, I'm Feven</span>
+          <span class="display-2--description lh-base">
+            Full-Stack Developer  | Power Platform Developer, <br> UI/UX Designer  | Data Analytics Enthusiast.
+          </span>
+        </h1>
+        <!-- Social Media Icons -->
+  <div class="social-icons mb-4">
+    <a href="https://www.instagram.com/penelopee_t?igsh=YzFrdXpxMGVmbzRj&utm_source=qr" target="_blank" class="me-3">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://t.me/Feven_Tefera" target="_blank" class="me-3">
+      <i class="fab fa-telegram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/feven-tefera-88870632b/" target="_blank" class="me-3">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/yourprofile" target="_blank" class="me-3">
+      <i class="fab fa-github"></i>
+    </a>
+    <style>
+ .social-icons a {
+  color: #fff; /* Icon color */
+  font-size: 1.5rem; /* Adjust icon size */
+  width: 40px; /* Circle size */
+  height: 40px; /* Circle size */
+  line-height: 40px; /* Align icon vertically */
+  display: inline-block; /* Ensures circular shape */
+  text-align: center; /* Align icon horizontally */
+  border-radius: 50%; /* Makes the background circular */
+  background-color: #5534ad; /* Default background color */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+  background-color: #521b9b; /* Light purple hover effect */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+    </style>
+  </div>
+  <a href="{% static 'files/Feven-Tefera-Resume-F.pdf' %}" download class="rounded-pill btn-rounded btn btn-primary" style="width: fit-content; color: black;">
+    Download My Resume
+    <span><i class="fas fa-download"></i></span>
+  </a>
+  
+      </div>
+      <!-- START THE CONTENT FOR THE VIDEO -->
+      <div class="col-md-6 intros text-end">
+        <div class="video-box">
+          <img src="{% static 'images/arts/woman-working-computer.png' %}" alt="video illutration" class="img-fluid" class="img-fluid" 
+          style="clip-path: circle(50% at 50% 50%); 
+           -webkit-clip-path: circle(50% at 50% 50%); 
+           width: 100%; 
+           height: auto; 
+           object-fit: cover; 
+           max-width: 500px;">
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                         START SECTION 4 - THE SERVICES  
+///////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="services" class="services">
+  <div class="container">
+    <br><br>
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold">Services</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+  <!-- START THE DESCRIPTION CONTENT  -->
+    <div class="row pt-2 pb-2 mt-0 mb-3">
+      <div class="col-md-6 border-right">
+        <div class="bg-white p-3">
+          <h2 class="fw-bold text-capitalize text-center">
+            My Services  Range From Initial Design To Deployment Anywhere Anytime
+          </h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-4 text-start">
+          <p class="fw-light">
+            Simplify your business processes with   innovative software solutions. From custom apps to automation, we've got you covered.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE CONTENT FOR THE SERVICES  -->
+  <div class="container">
+    <!-- START THE MARKETING CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="services__content">
+          <div class="icon d-block fas fa-chart-line"></div>
+          <h3 class="display-3--title mt-1">Data Analytics</h3>
+          <p class="lh-lg">
+            Unlock the power of your data with our comprehensive analytics solutions. I'll transform raw data into actionable insights, helping you make informed decisions that drive growth and efficiency. <br> My expertise in data visualization and statistical analysis ensures that you gain a clear understanding of your business performance.
+          </p>
+          <button type="button" class="rounded-pill btn-rounded border-primary" onclick="openModal('modal3')">Learn more
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+        <div class="services__pic">
+          <img src="{% static 'images/services/service-1.png' %}" alt="marketing illustration" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- START THE WEB DEVELOPMENT CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+        <div class="services__pic">
+          <img src="{% static 'images/services/service-2.png' %}" alt="web development illustration" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="services__content">
+          <div class="icon d-block fas fa-code"></div>
+          <h3 class="display-3--title mt-1">Web Development</h3>
+          <p class="lh-lg">
+            Create a strong online presence with my tailored web development services. I'll build responsive, user-friendly websites that not only look great but also perform seamlessly across devices.<br> From e-commerce platforms to corporate sites, I utilizes the latest technologies to deliver a robust digital experience.
+          </p>
+          <button type="button" class="rounded-pill btn-rounded border-primary" onclick="openModal('modal1')">Learn more
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- START THE CLOUD HOSTING CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="services__content">
+          <div class="icon d-block fas fa-layer-group"></div>
+          <h3 class="display-3--title mt-1">UI/UX Designs </h3>
+          <p class="lh-lg">
+            Enhance user satisfaction with my innovative UI/UX design services. I focus on creating intuitive and engaging interfaces that prioritize user experience. <br> My design process involves thorough research and testing, ensuring that every interaction is smooth and enjoyable, ultimately driving user engagement and loyalty.
+          </p>
+          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+        <div class="services__pic">
+          <img src="{% static 'images/services/service-3.png' %}" alt="cloud hosting illustration" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+   <!-- START THE WEB DEVELOPMENT CONTENT  -->
+   <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+      <div class="services__pic">
+        <img src="{% static 'images/services/service-2.png' %}" alt="web development illustration" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+      <div class="services__content">
+        <div class="icon d-block fas fa-code"></div>
+        <h3 class="display-3--title mt-1">Power Platform Development</h3>
+        <p class="lh-lg">
+          My Power Platform development services empower your business through tailored solutions across all platforms. I create custom applications with Power Apps to enhance productivity, automate workflows using Power Automate for seamless integration, and transform data into actionable insights with Power BI. Additionally, I develop intelligent chatbots with Power Virtual Agents to improve customer engagement and utilize Dataverse for secure, scalable data management. Harness the full potential of the Power Platform to drive innovation and achieve your business goals.        </p>
+        <button type="button" class="rounded-pill btn-rounded border-primary" onclick="openModal('modal5')">Learn more
+          <span><i class="fas fa-arrow-right"></i></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+</section>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 5 - About me 
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="testimonials" class="testimonials">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  <div class="container">
+    <div class="row text-center text-white">
+      <h1 class="display-3 fw-bold">About Me</h1>
+      <hr style="width: 100px; height: 3px; " class="mx-auto">
+    </div>
+
+    <!-- START THE CAROUSEL CONTENT  -->
+    <div class="row align-items-center">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- CAROUSEL ITEM 1 -->
+          <div class="carousel-item active"   style=" background-color: rgba(233, 233, 233, 0.815);">
+            <!-- testimonials card  -->
+            <div class="testimonials__card">
+              <p class="lh-lg">
+                <!-- <i class="fas fa-quote-left"></i> -->
+                <span style="align-items: center; font-weight: bold; color:purple;">Hello, I'm Feven Tefera </span> a passionate and dedicated tech enthusiast with a vision to empower businesses through innovative digital solutions. Graduating with a degree in Computer Science from the American College of Technology, I've honed my expertise in system development, e-commerce platforms, Power BI data analytics, and the Power Platform for app development.<br>
+
+                My work isn't just about delivering results; it's about crafting experiences that drive growth and solve challenges. Whether it's building seamless systems, creating dynamic e-commerce platforms, or turning complex data into actionable insights, I thrive on pushing boundaries and exceeding expectations.
+                
+                But my journey doesn't stop here! I’m expanding my horizons into the world of AI, machine learning, and emerging technologies. <br>I’m committed to staying ahead of the curve, learning, and evolving to deliver innovative solutions that meet the ever-changing needs of my clients.
+                
+                Let’s collaborate to bring your ideas to life and transform the future together. Your vision, paired with my skills, can create something extraordinary. <br> <span style="align-items: center; font-weight: bold; color:purple ;">Welcome to my world of innovation and creativity!</span>
+                <!-- <i class="fas fa-quote-right"></i> -->
+                
+              </p>
+            </div>
+            <!-- client picture  -->
+            <div class="testimonials__picture">
+              <img src="{% static 'images/testimonials/IMG_4255.jpg' %}" alt="client-1 picture" class="rounded-circle img-fluid" style="width: 150px; height: 100px;object-fit: cover;">
+            </div>
+            <!-- client name & role  -->
+            <div class="testimonials__name">
+            </div>
+          </div>     
+            
+        </div>
+        <div class="text-center">
+      
+        </div>
+      </div>
+      <div class="cont">
+        <div class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>BACHELOR OF COMPUTER SCIENCE</h3>
+                <p>2020 - 2024</p>
+                <p>American Collage of Technology, Addis Ababa, Ethiopia</p>
+<p>
+  As a computer science graduate, I've mastered algorithms, data structures, and programming, enabling me to build innovative software. I'm now a skilled software engineer and problem-solver, ready to drive digital transformation.
+</p>            </div>
+            <div class="education-item">
+                    </div>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <div class="skill-name">HTML, CSS, JAVASCRIPT</div>
+                <div class="skill-progress">
+                    <div class="skill-bar" style="width: 100%;"></div>
+                </div>
+                <div class="skill-value">100%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Python</div>
+                <div class="skill-progress">
+                    <div class="skill-bar" style="width: 95%;"></div>
+                </div>
+                <div class="skill-value">95%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">React</div>
+                <div class="skill-progress">
+                    <div class="skill-bar" style="width: 95%;"></div>
+                </div>
+                <div class="skill-value">95%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">PHP</div>
+                <div class="skill-progress">
+                    <div class="skill-bar" style="width: 75%;"></div>
+                </div>
+                <div class="skill-value">75%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Figma</div>
+                <div class="skill-progress">
+                    <div class="skill-bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill-value">80%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Django</div>
+                <div class="skill-progress">
+                    <div class="skill-bar" style="width: 98%;"></div>
+                </div>
+                <div class="skill-value">98%</div>
+            </div>
+        </div>
+   
+   <style>
+    .cont {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    .education, .skills {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(233, 233, 233, 0.815);
+}
+
+.education-item, .skill-item {
+    margin-bottom: 20px;
+}
+h2 {
+    color: #4b0082;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+.skill-progress {
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.skill-bar {
+    height: 100%;
+    background-color: #4b0082;
+    border-radius: 5px;
+}
+
+.skill-value {
+    text-align: right;
+    font-weight: bold;
+}
+   </style>
+   
+   
+   
+   
+   
+      </div>
+    
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
+                              START SECTION 7 - THE PORTFOLIO  
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="row text-center mt-5">
+      <h1 class="display-3 fw-bold text-capitalize">Latest work</h1>
+      <div class="heading-line"></div>
+      <p class="lead">
+        My latest works showcase modern web development, enterprise solutions, and data analytics, reflecting innovation and technical expertise.
+      </p>
+    </div>
+    <!-- FILTER BUTTONS  -->
+   <!-- FILTER BUTTONS -->
+<div class="row mt-5 mb-4 g-3 text-center">
+  <div class="col-md-12">
+      <button class="btn btn-outline-primary" onclick="filterItems('all')">All</button>
+      <button class="btn btn-outline-primary" onclick="filterItems('web-development')">Web Developments</button>
+      <button class="btn btn-outline-primary" onclick="filterItems('data-analytics')">Data Analytics</button>
+      <button class="btn btn-outline-primary" onclick="filterItems('Apps')">App Developments</button>
+  </div>
+</div>
+<script>
+  function filterItems(category) {
+      const items = document.querySelectorAll('.filter-item');
+
+      items.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+              item.style.display = 'block'; // Show the item
+          } else {
+              item.style.display = 'none'; // Hide the item
+          }
+      });
+  }
+</script>
+
+
+
+    <!-- START THE PORTFOLIO ITEMS  -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6 filter-item web-development" data-category="web-development">
+        <div class="portfolio-box shadow" onclick="openModal('modal1')">
+          <img src="{% static 'images/portfolio/main4.jpg' %}" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+          <div class="portfolio-info">
+            <div class="caption">
+              <h4>Minsitry Of Plan& Development of Ethiopia Time Series Data Managment System.</h4>
+              <button style="
+              background-color: white; /* White background */
+              color: #007bff; /* Text color */
+              border: 2px solid #007bff; /* Blue border */
+              border-radius: 25px; /* Rounded rectangle shape */
+              padding: 10px 20px; /* Padding for size */
+              font-size: 16px; /* Font size */
+              cursor: pointer; /* Pointer cursor on hover */
+              transition: background-color 0.3s, color 0.3s; /* Transition effects */
+              display: inline-block; /* Inline-block for proper alignment */
+              text-align: center; /* Center text */
+              margin: 20px; /* Margin around the button */
+          " onmouseover="this.style.backgroundColor='lightpurple'; this.style.color='black';" 
+              onmouseout="this.style.backgroundColor='white'; this.style.color='#007bff';">
+              See More
+          </button>
+          
+            </div>
+            
+          </div>
+          
+        </div> 
+      </div>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <div class="modal-flex">
+            <div class="slider">
+              <div class="slides"> <!-- Added slides container -->
+                <img src="{% static 'images/portfolio/main2.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/main1.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/main3.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/dash3.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/main4.jpg' %}" class="slider-image" alt="Portfolio Image">
+
+              </div>
+              <div class="dots"></div>
+            </div>
+            <div class="description">
+              <h4>Ministry Of Plan & Development of Ethiopia Time Series Data Management System.</h4>
+              <p> Transformed an Excel-based time series data storage system into a web-based platform, increasing data 
+                transparency and accessibility. <br> 
+                Developed a centralized databank, allowing users to view, analyze, and download datasets more efficiently.  
+                <br>
+                Integrated real-time data visualization, empowering users to explore trends and make informed, data
+                driven decisions. <br>
+               
+                Increased productivity and improved transparency across the organization by transitioning from manual 
+                Excel processes to an automated web-based system. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        width: 60%;
+        max-width: 800px;
+        margin: auto;
+      }
+      
+      .modal-flex {
+        display: flex;
+      }
+      
+      .slider {
+  flex: 1;
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Set width to 100% */
+}
+      
+      .slider-image {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .description {
+        flex: 1;
+        padding-left: 20px;
+      }
+      
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      .dots {
+        text-align: center;
+        margin-top: 10px;
+      }
+      
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .active {
+        background-color: #717171;
+      }
+      </style>
+      
+      <script>
+      let slideIndex = 0;
+      
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+        showSlides(modalId);
+      }
+      
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+      
+      function showSlides(modalId) {
+        const slides = document.querySelector(`#${modalId} .slides`);
+        const dotsContainer = document.querySelector(`#${modalId} .dots`);
+        const images = slides.getElementsByTagName("img");
+      
+        // Create dots
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < images.length; i++) {
+          const dot = document.createElement("span");
+          dot.classList.add("dot");
+          dot.onclick = () => currentSlide(i, modalId);
+          dotsContainer.appendChild(dot);
+        }
+      
+        // Show the first slide
+        slideIndex = 0;
+        updateSlides(slides, images, dotsContainer);
+        setInterval(() => {
+          slideIndex++;
+          if (slideIndex >= images.length) slideIndex = 0;
+          updateSlides(slides, images, dotsContainer);
+        }, 2000); // Change slide every 2 seconds
+      }
+      
+      function currentSlide(n, modalId) {
+        slideIndex = n;
+        const slides = document.querySelector(`#${modalId} .slides`);
+        const images = slides.getElementsByTagName("img");
+        const dots = document.querySelectorAll(`#${modalId} .dot`);
+        updateSlides(slides, images, dots);
+      }
+      
+      function updateSlides(slides, images, dots) {
+        const totalSlides = images.length;
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+      
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      
+        // Update dots
+        dots.forEach((dot, index) => {
+          dot.classList.remove("active");
+          if (index === slideIndex) {
+            dot.classList.add("active");
+          }
+        });
+      }
+      
+      // Close modal when clicking outside of the modal content
+      window.onclick = function(event) {
+        const modals = document.getElementsByClassName('modal');
+        for (let modal of modals) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      }
+      </script>
+      
+
+      <div class="col-lg-4 col-md-6 filter-item web-development" data-category="web-development">
+        <div class="portfolio-box shadow" onclick="openModal('modal2')">
+          <img src="{% static 'images/portfolio/m&e.jpg' %}" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+          <div class="portfolio-info">
+            <div class="caption">
+              <h4>Minsitry Of Plan& Development of Ethiopia Survey Managemnt System </h4>
+              <button style="
+              background-color: white; /* White background */
+              color: #007bff; /* Text color */
+              border: 2px solid #007bff; /* Blue border */
+              border-radius: 25px; /* Rounded rectangle shape */
+              padding: 10px 20px; /* Padding for size */
+              font-size: 16px; /* Font size */
+              cursor: pointer; /* Pointer cursor on hover */
+              transition: background-color 0.3s, color 0.3s; /* Transition effects */
+              display: inline-block; /* Inline-block for proper alignment */
+              text-align: center; /* Center text */
+              margin: 20px; /* Margin around the button */
+          " onmouseover="this.style.backgroundColor='lightpurple'; this.style.color='black';" 
+              onmouseout="this.style.backgroundColor='white'; this.style.color='#007bff';">
+              See More
+          </button>            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <div class="modal-flex">
+            <div class="slider">
+              <div class="slides"> <!-- Added slides container -->
+                <img src="{% static 'images/portfolio/m&e2.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/m&e3.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/m&e1.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/m&e.jpg' %}" class="slider-image" alt="Portfolio Image">
+
+              </div>
+              <div class="dots"></div>
+            </div>
+            <div class="description">
+              <h4>Minsitry Of Plan& Development of Ethiopia Survey Managemnt System</h4>
+              <p>Migrated manual survey collection and Excel-based data storage to a web-based Monitoring and Evaluation 
+                (M&E) system, enhancing data accessibility and accuracy. <br> 
+                Developed robust data collection and report generation capabilities, delivering real-time insights for 
+                decision-making. <br>
+                Designed a comprehensive evaluation tool that generated detailed reports and surveys for multiple 
+                ministries, streamlining processes and improving decision-making. Worked closely with stakeholders to 
+                ensure the system met user needs and facilitated effective data analysis. 
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 filter-item web-development" data-category="data-analytics">
+        <div class="portfolio-box shadow" onclick="openModal('modal3')">
+          <img src="{% static 'images/portfolio/Store 1.jpg' %}" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
+          <div class="portfolio-info">
+            <div class="caption">
+              <h4>SUPERMARKET DASHBOARD ANALYSIS</h4>
+              <button style="
+              background-color: white; /* White background */
+              color: #007bff; /* Text color */
+              border: 2px solid #007bff; /* Blue border */
+              border-radius: 25px; /* Rounded rectangle shape */
+              padding: 10px 20px; /* Padding for size */
+              font-size: 16px; /* Font size */
+              cursor: pointer; /* Pointer cursor on hover */
+              transition: background-color 0.3s, color 0.3s; /* Transition effects */
+              display: inline-block; /* Inline-block for proper alignment */
+              text-align: center; /* Center text */
+              margin: 20px; /* Margin around the button */
+          " onmouseover="this.style.backgroundColor='lightpurple'; this.style.color='black';" 
+              onmouseout="this.style.backgroundColor='white'; this.style.color='#007bff';">
+              See More
+          </button>            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <div class="modal-flex">
+            <div class="slider">
+              <div class="slides"> <!-- Added slides container -->
+                <img src="{% static 'images/portfolio/store2.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/store3.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/store4.jpg' %}" class="slider-image" alt="Portfolio Image">
+                <img src="{% static 'images/portfolio/Store 1.jpg' %}" class="slider-image" alt="Portfolio Image">
+
+              </div>
+              <div class="dots"></div>
+            </div>
+            <div class="description">
+              <h4>Super Store Dashboard </h4>
+              <p>The Super Store Dashboard provides a comprehensive overview of key performance indicators. It allows users to track sales, inventory, and customer engagement in real-time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 filter-item data-analytics" data-category="data-analytics">
+        <div class="portfolio-box shadow" onclick="openModal('modal4')">
+    <img src="{% static 'images/portfolio/sales1.jpg' %}" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
+    <div class="portfolio-info">
+      <div class="caption">
+        <h4>SALES REPORT DASHBOARD</h4>
+        <button style="
+        background-color: white; /* White background */
+        color: #007bff; /* Text color */
+        border: 2px solid #007bff; /* Blue border */
+        border-radius: 25px; /* Rounded rectangle shape */
+        padding: 10px 20px; /* Padding for size */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s, color 0.3s; /* Transition effects */
+        display: inline-block; /* Inline-block for proper alignment */
+        text-align: center; /* Center text */
+        margin: 20px; /* Margin around the button */
+    " onmouseover="this.style.backgroundColor='lightpurple'; this.style.color='black';" 
+        onmouseout="this.style.backgroundColor='white'; this.style.color='#007bff';">
+        See More
+    </button>      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <div class="modal-flex">
+      <div class="slider">
+        <div class="slides"> <!-- Added slides container -->
+          <img src="{% static 'images/portfolio/sales2.jpg' %}" class="slider-image" alt="Portfolio Image">
+          <img src="{% static 'images/portfolio/sales1.jpg' %}" class="slider-image" alt="Portfolio Image">
+
+        </div>
+        <div class="dots"></div>
+      </div>
+      <div class="description">
+        <h4>Sales Report </h4>
+        <p>The Sales Report offers detailed insights into sales performance over specified periods. It highlights trends, top-selling products, and revenue metrics, enabling data-driven decision-making.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+<div class="col-lg-4 col-md-6 filter-item data-analytics" data-category="Apps">
+  <div class="portfolio-box shadow" onclick="openModal('modal5')">
+<img src="{% static 'images/portfolio/emp1.png' %}" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
+<div class="portfolio-info">
+<div class="caption">
+  <h4>Power platfrom Developments</h4>
+  <button style="
+  background-color: white; /* White background */
+  color: #007bff; /* Text color */
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 25px; /* Rounded rectangle shape */
+  padding: 10px 20px; /* Padding for size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Transition effects */
+  display: inline-block; /* Inline-block for proper alignment */
+  text-align: center; /* Center text */
+  margin: 20px; /* Margin around the button */
+" onmouseover="this.style.backgroundColor='lightpurple'; this.style.color='black';" 
+  onmouseout="this.style.backgroundColor='white'; this.style.color='#007bff';">
+  See More
+</button>      </div>
+</div>
+</div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal5')">&times;</span>
+    <div class="modal-flex">
+      <div class="slider">
+        <div class="slides"> <!-- Added slides container -->
+          <img src="{% static 'images/portfolio/emp2.png' %}" class="slider-image" alt="Portfolio Image">
+          <img src="{% static 'images/portfolio/e3.png' %}" class="slider-image" alt="Portfolio Image">
+          <img src="{% static 'images/portfolio/e3.png' %}" class="slider-image" alt="Portfolio Image">
+          <img src="{% static 'images/portfolio/e4.png' %}" class="slider-image" alt="Portfolio Image">
+          <img src="{% static 'images/portfolio/e5.png' %}" class="slider-image" alt="Portfolio Image">
+          <img src="{% static 'images/portfolio/e6.png' %}" class="slider-image" alt="Portfolio Image">
+          <img src="{% static 'images/portfolio/e7.png' %}" class="slider-image" alt="Portfolio Image">
+
+        </div>
+        <div class="dots"></div>
+      </div>
+      <div class="description">
+        <h4> Employee Training App </h4>
+<p>
+ 
+The Employee Training App, developed on the Power Platform, streamlines the training process by notifying employees about upcoming training sessions and facilitating attendance approvals.
+
+Key Features:
+
+Training Notifications: Employees receive timely notifications about available training sessions, ensuring they stay informed and engaged.
+
+Attendance Management: The app allows for easy tracking and approval of attendance, simplifying the process for both employees and managers.
+
+User-Friendly Interface: Designed for ease of use, the app ensures that employees can quickly access training information and respond to notifications effortlessly.
+</p>      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!---->
+    </div>
+  </div>
+</section>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+              START SECTION 8 - GET STARTED  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="contact" class="get-started">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold text-capitalize">Let's Connect!</h1>
+      <div class="heading-line"></div>
+      <p class="lh-lg">
+      </p>
+    </div>
+
+    <!-- START THE CTA CONTENT  -->
+    <div class="row text-white">
+      <div class="col-12 col-lg-6 gradient shadow p-3">
+        <div class="cta-info w-100">
+          <h4 class="display-4 fw-bold">Get In Touch</h4>
+          <p class="lh-lg">
+          </p>
+          <h3 class="display-3--brief">What will be the next step?</h3>
+          <ul class="cta-info__list">
+            <li>We'll prepare the proposal.</li>
+            <li>we'll discuss it together.</li>
+            <li>let's start the discussion.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 bg-white shadow p-3">
+        <div class="form w-100 pb-2">
+          <h4 class="display-3--title mb-5">Drop Your Messages <i class="fas fa-hand-point-down"></i></h4>
+          <form id="contactForm" class="row">
+            {% csrf_token %}
+            <div class="col-lg-6 col-md mb-3">
+                <input type="text" name="first_name" placeholder="First Name" class="shadow form-control form-control-lg" required>
+            </div>
+            <div class="col-lg-6 col-md mb-3">
+                <input type="text" name="last_name" placeholder="Last Name" class="shadow form-control form-control-lg" required>
+            </div>
+            <div class="col-lg-12 mb-3">
+                <input type="email" name="email" placeholder="Email Address" class="shadow form-control form-control-lg" required>
+            </div>
+            <div class="col-lg-12 mb-3">
+                <textarea name="message" placeholder="Message" rows="8" class="shadow form-control form-control-lg" required></textarea>
+            </div>
+            <div class="text-center d-grid mt-1">
+                <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
+                    Send
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </form>
+        
+       
+      
+        <style>
+    #notification {
+        display: none; /* Keep it hidden by default */
+        position: fixed;
+        top: 20px; /* Adjust as needed */
+        left: 50%; /* Center it horizontally */
+        transform: translateX(-50%); /* Offset by half its width */
+        z-index: 1000;
+        background-color: rgb(255, 253, 253);
+        border: 1px solid #ccc; /* Optional: Add a border */
+        padding: 15px; /* Optional: Add some padding */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+        border-radius: 5px; /* Optional: Round the corners */
+    }
+
+        </style>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const formData = new FormData(this);
+
+        fetch("{% url 'index_url' %}", {  // Ensure the URL is correct
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest' // Indicate that this is an AJAX request
+            }
+        })
+        .then(response => {
+            console.log('Response Status:', response.status);  // Log the response status
+            return response.json();
+        })
+        .then(data => {
+            console.log('Data:', data);  // Log the data received
+            if (data.status === 'success') {
+                // Optionally display a success message (if desired)
+                alert(data.message); // Display alert for user feedback
+
+                // Refresh the page
+                window.location.reload(); // Reload the current page
+            } else {
+                console.error('Error in response:', data);  // Log if there's an error in the response
+            }
+        })
+        .catch(error => console.error('Fetch error:', error)); // Log any fetch errors
+    });
+</script>
+
+  
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 9 - THE FOOTER  
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- CONTENT FOR THE MOBILE NUMBER  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">+2519 32076500</a>
+        </div>
+      </div>  
+      <!-- CONTENT FOR EMAIL  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+            <line x1="3" y1="19" x2="9" y2="13" />
+            <line x1="15" y1="13" x2="21" y2="19" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">feventefera16@gmail.com</a>
+          <p class="contact-box__info--subtitle">Get In Touch Via Email</p>
+        </div>
+      </div>
+      <!-- CONTENT FOR LOCATION  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="18" y2="6.01" />
+            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+            <line x1="9" y1="4" x2="9" y2="17" />
+            <line x1="15" y1="15" x2="15" y2="20" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">Addis Ababa, Ethiopia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE SOCIAL MEDIA CONTENT  -->
+  <div class="footer-sm" style="background-color: #212121;">
+    <div class="container">
+      <div class="row py-4 text-center text-white">
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+          connect with me on my social media
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="https://t.me/Feven_Tefera"><i class="fab fa-telegram"></i></a>
+          <a href="https://github.com/Feven-Tefera"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/feven-tefera-88870632b/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/penelopee_t?igsh=YzFrdXpxMGVmbzRj&utm_source=qr"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+ 
+
+  <!-- START THE COPYRIGHT INFO  -->
+  <div class="footer-bottom pt-5 pb-5">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-12">
+          <div class="footer-bottom__copyright">
+            &COPY; Copyright 2025 <a href="#">Feven Tefera</a> | Created by <a href="" target="_blank">Feven</a><br><br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP BUTTON  -->
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+   
+    <script src="{% static 'assets/vendors/js/glightbox.min.js' %}"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        'touchNavigation': true,
+        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+        'type': 'video',
+        'source': 'youtube', //vimeo, youtube or local
+        'width': 900,
+        'autoPlayVideos': 'true',
+});
+    
+    </script>
+     <script src="{% static 'static/assets/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
